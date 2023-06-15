@@ -19,7 +19,7 @@ The project focuses on creating an algorithmic trading system with a specific em
 ## Datasets
 To retrieve historical stock data, we utilize the yfinance library. By importing `import yfinace as yf` library and providing the needed ticker symbols `META``AAPL``AMZN``NFLX``GOOGL` it allowed us to fetch data directly from Yahoo Finance, providing us with a convenient and reliable source of historical stock prices for analysis and modeling. 
 
-## Libraries and Models
+## Libraries 
 # Import Libraries
 import pandas as pd (Used for data manipulation and analysis)
 import yfinance as yf ( to fetch historical stock price data of FAANG stocks)
@@ -30,6 +30,11 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import classification_report
 from sklearn import svm
 from sklearn.svm import SVC
+
+## Models
+Support Vector Machine (SVM):  It is a robust model that is used to predict whether the share’s close price will be higher or lower than the day before. We used SVM because it allows us to compare with multiple indicators because it can handle more complex data.
+
+Logistic Regression:  Logistic regression will allow us to hone in specifically on the direction of share price and by leaving other factors like momentum or strength of movement out, therefore the accuracy of direction will increase.
 
 ## Data Analysis
 Retrieved historical data for FAANG stocks using the `yf.download` function from the `yfinance` library. The data is retrieved for the time period from `start_date` July 1, 2021, to `end_date` June 1, 2023, at an hourly interval.
@@ -60,16 +65,20 @@ Created a new DataFrame `predictions_df` for predictions, which includes the pre
 Plotted the cumulative returns for the actual returns and the trading algorithm returns.
 =======
 
+## Discussion/ Conclusion
+From the SVM model we used two sets of controlled variables with the time frame intervals: 1H and 5m.  As we can see from the chart above, the 1H model produced sub par results at about 50% accuracy.  It should be noted that for all 5 stocks the model came back with similar results.
 
-## Libraries and Models
+Initially the points where SMA 9 and SMA 21 intersected was going to be used to determine the entry and exit points using EMA 200 as a base line.
+However there wasn’t enough points of references to output this data since the interval was broader and focused at 1 day intervals.
+The constraints to determine the entry and exit points were altered in order to run backtesting and assign signal values of -1, and 1.
+The new points didn’t require SMA 9 and SMA 21 to crossover. It was only required that both SMAs were above or below the EMA200 at the same time.
+Hence we ran 2 codes where the intervals were 1 hour and 5 mins apart with the data windows previously explained. The 5min interval plot didn’t correlate with the classification reports for Amazon and Google Stocks. 
+Taking these factors into consideration we determined that the 1 hour interval contained more historical data and that a correlation between the classification report accuracy and the plot was present. 
+Even though the accuracy was lower, this may be attributed to the fact that we changed the entry and exit constraints to a broader one.
 
-
-## Major Findings
-
-## Conclusion
+The SVM returns similar results amongst the different companies, even though the results aren't reliable.  The results from the ogistic regression were random amongst the 5 different companies. Ranging from poor to good with 4⁄5 companies returning insufficient results.  In other words the logistic regression results were neither precise nor accurate.
 
 ## PostMortem
-
 ### Difficulties/ Limitations
 
 ### Furthur Findings: What would you research next if you had two more weeks?:
@@ -79,7 +88,4 @@ Plotted the cumulative returns for the actual returns and the trading algorithm 
 ##References
 
 
-=======
-### What would you research next if you had two more weeks?:
 
-##References
