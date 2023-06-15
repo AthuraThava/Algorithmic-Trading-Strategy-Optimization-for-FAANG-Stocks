@@ -21,7 +21,6 @@ The project focuses on creating an algorithmic trading system with a specific em
 To retrieve historical stock data, we utilize the yfinance library. By importing `import yfinace as yf` library and providing the needed ticker symbols `META``AAPL``AMZN``NFLX``GOOGL` it allowed us to fetch data directly from Yahoo Finance, providing us with a historic stock prices for analysis and modeling. 
 
 ## Libraries and Models
-# Import Libraries
 import pandas as pd (Used for data manipulation and analysis)
 import yfinance as yf ( to fetch historical stock price data of FAANG stocks)
 import finta (Used for technical analysis for indicators such as SMA, EMA and Boolinger Bands)
