@@ -1,5 +1,5 @@
 ### Group_5_Project_2
-#Algorithmic Trading Strategy Optimization for FAANG Stocks
+# Algorithmic Trading Strategy Optimization for FAANG Stocks
 ![FAANG-stocks](https://github.com/AthuraThava/Group_5_Project_2/assets/125109159/11ac0756-0815-4d7f-8565-cc884b0ea0f0)
 
 **Team Members:** <br>
@@ -94,3 +94,17 @@ The SVM returns similar results amongst the different companies, even though the
 * There is a lot more opportunity to build on. To implement additional technical indicators or develop custom features that might provide valuable insights for trading strategies. Consider indicators such as Relative Strength Index (RSI), by incorporating these features it could improve the accuracy of the models.
 * Sentiment analysis techniques to incorporate real-time market data from news articles, social media, or financial reports. Determine whether sentiment analysis can enhance the prediction accuracy of the trading models and potentially provide early indications of market movements.
 * Implement a trading bot in real-time scenarios, connecting it to live market data and executing trades automatically.
+
+### Referneces 
+* University of Toronto Bootcamp. (2023). FinTech. Retrieved from [https://bootcamp.utoronto.ca/data/](https://utoronto.bootcampcontent.com/utoronto-bootcamp/UTOR-VIRT-FIN-PT-02-2023-U-LOLC)https://utoronto.bootcampcontent.com/utoronto-bootcamp/UTOR-VIRT-FIN-PT-02-2023-U-LOLC
+* Pandas:
+  * Pandas. (n.d.). Retrieved from https://pandas.pydata.org/
+* yfinance:
+  * Ranaroussi, R. (n.d.). yfinance. Retrieved from https://github.com/ranaroussi/yfinance
+* finta:
+  * Peerchemist. (n.d.). finta. Retrieved from https://github.com/peerchemist/finta
+* Plotly:
+  * Plotly. (n.d.). Retrieved from https://plotly.com/python/
+* scikit-learn (sklearn):
+  * scikit-learn. (n.d.). Retrieved from https://scikit-learn.org/stable/
+
