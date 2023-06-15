@@ -1,5 +1,5 @@
 ### Group_5_Project_2
-#Algorithmic Trading Strategy Optimization for FAANG Stocks
+# Algorithmic Trading Strategy Optimization for FAANG Stocks
 ![FAANG-stocks](https://github.com/AthuraThava/Group_5_Project_2/assets/125109159/11ac0756-0815-4d7f-8565-cc884b0ea0f0)
 
 **Team Members:** <br>
