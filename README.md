@@ -10,8 +10,8 @@ Nicholas Gracan <br>
 Pablo Acevedo <br>
 *Presentation June 15th, 2023*
 
-### To access the Prezi presentation use the following link: 
-import link/file
+### To access the presentation use the following link: 
+[import link/file](https://docs.google.com/presentation/d/1PmvzF5GRk6fXmAmKf6NDKacA07nCLFucnHAD2ST3_Yg/edit?usp=sharing)
 
 ## Hypothesis
 The project focuses on creating an algorithmic trading system with a specific emphasis on FAANG stocks (Facebook, Apple, Amazon, Netflix, and Google). The primary objective is to conduct thorough backtesting and market analysis using historical data of these stocks. By employing various trading models, the project aims to develop accurate predictions and optimize trading strategies. Technical indicators such as Simple Moving Average (SMA) and logistic regression are utilized to enhance the models' predictive capabilities. Through extensive backtesting and model development, the project seeks to identify buy or sell signals for each FAANG stock, enabling informed trading decisions. The ultimate goal is to create a robust and effective algorithmic trading system that can generate profitable results based on market analysis and strategy optimization.  <br>
@@ -19,17 +19,17 @@ The project focuses on creating an algorithmic trading system with a specific em
 ## Datasets
 To retrieve historical stock data, we utilize the yfinance library. By importing `import yfinace as yf` library and providing the needed ticker symbols `META``AAPL``AMZN``NFLX``GOOGL` it allowed us to fetch data directly from Yahoo Finance, providing us with a convenient and reliable source of historical stock prices for analysis and modeling. 
 
-## Libraries 
-# Import Libraries
-import pandas as pd (Used for data manipulation and analysis)
-import yfinance as yf ( to fetch historical stock price data of FAANG stocks)
-import finta (Used for technical analysis for indicators such as SMA, EMA and Boolinger Bands)
-import plotly.graph_objects as go ()
-from pandas.tseries.offsets import DateOffset
-from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import classification_report
-from sklearn import svm
-from sklearn.svm import SVC
+# Libraries 
+## Import Libraries
+* import `pandas` as `pd` (Used for data manipulation and analysis)
+* import `yfinance` as `yf` ( to fetch historical stock price data of FAANG stocks)
+* import `finta` (Used for technical analysis for indicators such as SMA, EMA and Boolinger Bands)
+* import `plotly.graph_objects` as `go`
+* from `pandas.tseries.offsets` import `DateOffset`
+* from `sklearn.preprocessing` import `StandardScaler`
+* from `sklearn.metrics` import `classification_report`
+* from `sklearn` import `svm`
+* from `sklearn.svm` import `SVC`
 
 ## Models
 Support Vector Machine (SVM):  It is a robust model that is used to predict whether the share’s close price will be higher or lower than the day before. We used SVM because it allows us to compare with multiple indicators because it can handle more complex data.
@@ -65,13 +65,16 @@ Created a new DataFrame `predictions_df` for predictions, which includes the pre
 Plotted the cumulative returns for the actual returns and the trading algorithm returns.
 =======
 
+
 ## Discussion/ Conclusion
 From the SVM model we used two sets of controlled variables with the time frame intervals: 1H and 5m.  As we can see from the chart above, the 1H model produced sub par results at about 50% accuracy.  It should be noted that for all 5 stocks the model came back with similar results.
 
 Initially the points where SMA 9 and SMA 21 intersected was going to be used to determine the entry and exit points using EMA 200 as a base line.
+
 However there wasn’t enough points of references to output this data since the interval was broader and focused at 1 day intervals.
 The constraints to determine the entry and exit points were altered in order to run backtesting and assign signal values of -1, and 1.
 The new points didn’t require SMA 9 and SMA 21 to crossover. It was only required that both SMAs were above or below the EMA200 at the same time.
+
 Hence we ran 2 codes where the intervals were 1 hour and 5 mins apart with the data windows previously explained. The 5min interval plot didn’t correlate with the classification reports for Amazon and Google Stocks. 
 Taking these factors into consideration we determined that the 1 hour interval contained more historical data and that a correlation between the classification report accuracy and the plot was present. 
 Even though the accuracy was lower, this may be attributed to the fact that we changed the entry and exit constraints to a broader one.
@@ -79,13 +82,15 @@ Even though the accuracy was lower, this may be attributed to the fact that we c
 The SVM returns similar results amongst the different companies, even though the results aren't reliable.  The results from the ogistic regression were random amongst the 5 different companies. Ranging from poor to good with 4⁄5 companies returning insufficient results.  In other words the logistic regression results were neither precise nor accurate.
 
 ## PostMortem
+
 ### Difficulties/ Limitations
+* Importing data on a larger scale, more historically data with small intervals
+* Implement the initial constraints on strategies 
+* Backtest the other indicators (MACD, Bollinger Bands, Williams Fractals)
+* Combine strategies into one to establish more accuracy
+* Feeding data and strategy into a trading bot, that will output exit and enter points for real-time data.
 
 ### Furthur Findings: What would you research next if you had two more weeks?:
 * There is a lot more opportunity to build on. To implement additional technical indicators or develop custom features that might provide valuable insights for trading strategies. Consider indicators such as Relative Strength Index (RSI), by incorporating these features it could improve the accuracy of the models.
 * Sentiment analysis techniques to incorporate real-time market data from news articles, social media, or financial reports. Determine whether sentiment analysis can enhance the prediction accuracy of the trading models and potentially provide early indications of market movements.
 * Implement a trading bot in real-time scenarios, connecting it to live market data and executing trades automatically.
-##References
-
-
-
