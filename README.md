@@ -3,7 +3,7 @@ Algorithmic Trading Strategy Optimization for FAANG Stocks
 test
 ### Group_5_Project_2
 #Algorithmic Trading Strategy Optimization for FAANG Stocks
-### **Team Members: Athura Thavathasan, Nicholas Gracan, Brandon Petrie, Pablo Aray Acevedo**
+### **Team Members: Athura Thavathasan, Harshitha Katta, Nicholas Gracan, Brandon Petrie, Pablo Aray Acevedo**
 *Presentation June 15th, 2023*
 
 ### To access the Prezi presentation use the following link: 
