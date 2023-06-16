@@ -8,6 +8,8 @@ Brandon Petrie <br>
 Harshitha Katta <br>
 Nicholas Gracan <br>
 Pablo Acevedo <br>
+
+
 *Presentation June 15th, 2023*
 
 ### To access the presentation use the following link: 
@@ -35,6 +37,19 @@ To retrieve historical stock data, we utilize the yfinance library. By importing
 Support Vector Machine (SVM):  It is a robust model that is used to predict whether the share’s close price will be higher or lower than the day before. We used SVM because it allows us to compare with multiple indicators because it can handle more complex data.
 
 Logistic Regression:  Logistic regression will allow us to hone in specifically on the direction of share price and by leaving other factors like momentum or strength of movement out, therefore the accuracy of direction will increase.
+
+## Exploration Process
+During the exploration process we assessed various different trading strategies that we would ideally like to incorporate into our overall algorithmic trading strategy. Some of the technical financial analysis indicators we explored were the use of:
+
+* Bollinger bands
+* Candle Sticks
+* Simple Moving averages 
+* Exponential moving average
+* Moving Average Conversion/Diversion
+
+![image](https://github.com/AthuraThava/Group_5_Project_2/assets/125240804/ef5a4699-251f-4e83-a332-eee593b105f4)
+
+The motive behind exploring these indicators was to gain an ability to track and measure the direction of the price and returns trends for different stocks over a set period of time. The initial product we were able to produce after exploring all these technical indicators, was a plot of the prices of a stock over time, overlaid with all the technical indicators above to produce one comprehensive technical stock analysis visual. From here we were able to identify the entry and exit point of our strategy based on the intersection lines of the SMA’s with the EMA. The issue that arose after we have completed this exploration and cleansing process was that we were not able to backtest this strategy with the code we had used to produce the overlaid plot. 
 
 ## Data Analysis
 Retrieved historical data for FAANG stocks using the `yf.download` function from the `yfinance` library. The data is retrieved for the time period from `start_date` July 1, 2021, to `end_date` June 1, 2023, at an hourly interval.
@@ -64,88 +79,45 @@ Created a new DataFrame `predictions_df` for predictions, which includes the pre
 
 Plotted the cumulative returns for the actual returns and the trading algorithm returns.
 =======
-### 1 Hour
-![AAPL Classification Report](Images/1h/AAPL_Classification%20Report_1h.png)
 
-![AAPL Cumulative Returns Plot](Images/1h/AAPL_cumulative_returns_plot_1h.png)
-
-![AAPL Cumulative Returns Plot LR1h](Images/1h/AAPL_cumulative_returns_plot__LR1h.png)
+## APPL
 
 ![AAPL with SMAs EMA200](Images/1h/AAPL_with_SMAs_EMA200_1h.png)
 
-![AMZN Classification Report](Images/1h/AMZN_Classification%20Report_1h.png)
+![image](https://github.com/AthuraThava/Group_5_Project_2/assets/125240804/4bbda89e-206f-4c1c-bbc6-f88d33798054)
 
-![AMZN Cumulative Returns Plot](Images/1h/AMZN_cumulative_returns_plot_1h.png)
-
-![AMZN Cumulative Returns Plot LR1h](Images/1h/AMZN_cumulative_returns_plot__LR1h.png)
+## AMZN
 
 ![AMZN with SMAs EMA200](Images/1h/AMZN_with_SMAs_EMA200_1h.png)
 
-![GOOG Classification Report](Images/1h/GOOG_Classification%20Report_1h.png)
+![image](https://github.com/AthuraThava/Group_5_Project_2/assets/125240804/4a20e38a-0479-4073-b0bf-e65dadc2f12b)
 
-![GOOG Cumulative Returns Plot](Images/1h/GOOG_cumulative_returns_plot_1h.png)
-
-![GOOG Cumulative Returns Plot LR1h](Images/1h/GOOG_cumulative_returns_plot__LR1h.png)
+## GOOG
 
 ![GOOG with SMAs EMA200](Images/1h/GOOG_with_SMAs_EMA200_1h.png)
 
-![META Classification Report](Images/1h/META_Classification%20Report_1h.png)
+![image](https://github.com/AthuraThava/Group_5_Project_2/assets/125240804/98c4dedf-211f-4cac-9bd0-4b212a11cd0c)
 
-![META Cumulative Returns Plot](Images/1h/META_cumulative_returns_plot_1h.png)
-
-![META Cumulative Returns Plot LR1h](Images/1h/META_cumulative_returns_plot__LR1h.png)
+## META
 
 ![META with SMAs EMA200](Images/1h/META_with_SMAs_EMA200_1h.png)
 
-![NFLX Classification Report](Images/1h/NFLX_Classification%20Report_1h.png)
+![image](https://github.com/AthuraThava/Group_5_Project_2/assets/125240804/63a45206-20ad-4685-b227-3dac8c83f65d)
 
-![NFLX Cumulative Returns Plot](Images/1h/NFLX_cumulative_returns_plot_1h.png)
-
-![NFLX Cumulative Returns Plot LR1h](Images/1h/NFLX_cumulative_returns_plot__LR1h.png)
+## NFLX
 
 ![NFLX with SMAs EMA200](Images/1h/NFLX_with_SMAs_EMA200_1h.png)
 
-### 5 Minutes
-![AAPL Classification Report](Images/5m/AAPL_Classification%20Report_5m.png)
+![image](https://github.com/AthuraThava/Group_5_Project_2/assets/125240804/3e1c1b74-6410-420c-bcf3-cea737685a5d)
 
-![AAPL Cumulative Returns Plot](Images/5m/AAPL_cumulative_returns_plot_5m.png)
+### 1 Hour vs. 5 Minute Intervals
+![image](https://github.com/AthuraThava/Group_5_Project_2/assets/125240804/f5b00dc8-927a-4e53-a8d2-33ae2d817105)
 
-![AAPL Cumulative Returns Plot LR5m](Images/5m/AAPL_cumulative_returns_plot__LR5m.png)
+# Logistic Regression
+![image](https://github.com/AthuraThava/Group_5_Project_2/assets/125240804/acbf31df-fc25-47b6-87dd-26b1f8aa0c24)
 
-![AAPL with SMAs EMA200](Images/5m/AAPL_with_SMAs_EMA200_5m.png)
-
-![AMZN Classification Report](Images/5m/AMZN_Classification%20Report_5m.png)
-
-![AMZN Cumulative Returns Plot](Images/5m/AMZN_cumulative_returns_plot_5m.png)
-
-![AMZN Cumulative Returns Plot LR5m](Images/5m/AMZN_cumulative_returns_plot__LR5m.png)
-
-![AMZN with SMAs EMA200](Images/5m/AMZN_with_SMAs_EMA200_5m.png)
-
-![GOOG Classification Report](Images/5m/GOOG_Classification%20Report_5m.png)
-
-![GOOG Cumulative Returns Plot](Images/5m/GOOG_cumulative_returns_plot_5m.png)
-
-![GOOG Cumulative Returns Plot LR5m](Images/5m/GOOG_cumulative_returns_plot__LR5m.png)
-
-![GOOG with SMAs EMA200](Images/5m/GOOG_with_SMAs_EMA200_5m.png)
-
-![META Classification Report](Images/5m/META_Classification%20Report_5m.png)
-
-![META Cumulative Returns Plot](Images/5m/META_cumulative_returns_plot_5m.png)
-
-![META Cumulative Returns Plot LR5m](Images/5m/META_cumulative_returns_plot__LR5m.png)
-
-![META with SMAs EMA200](Images/5m/META_with_SMAs_EMA200_5m.png)
-
-![NFLX Classification Report](Images/5m/NFLX_Classification%20Report_5m.png)
-
-![NFLX Cumulative Returns Plot](Images/5m/NFLX_cumulative_returns_plot_5m.png)
-
-![NFLX Cumulative Returns Plot LR5m](Images/5m/NFLX_cumulative_returns_plot__LR5m.png)
-
-![NFLX with SMAs EMA200](Images/5m/NFLX_with_SMAs_EMA200_5m.png)
-
+## SVM vs. Logistic Regression
+![image](https://github.com/AthuraThava/Group_5_Project_2/assets/125240804/af2e5312-2385-45c5-8553-f147061be2bb)
 
 ## Discussion/ Conclusion
 From the SVM model we used two sets of controlled variables with the time frame intervals: 1H and 5m.  As we can see from the chart above, the 1H model produced sub par results at about 50% accuracy.  It should be noted that for all 5 stocks the model came back with similar results.
