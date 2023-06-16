@@ -64,6 +64,87 @@ Created a new DataFrame `predictions_df` for predictions, which includes the pre
 
 Plotted the cumulative returns for the actual returns and the trading algorithm returns.
 =======
+### 1 Hour
+![AAPL Classification Report](Images/1h/AAPL_Classification%20Report_1h.png)
+
+![AAPL Cumulative Returns Plot](Images/1h/AAPL_cumulative_returns_plot_1h.png)
+
+![AAPL Cumulative Returns Plot LR1h](Images/1h/AAPL_cumulative_returns_plot__LR1h.png)
+
+![AAPL with SMAs EMA200](Images/1h/AAPL_with_SMAs_EMA200_1h.png)
+
+![AMZN Classification Report](Images/1h/AMZN_Classification%20Report_1h.png)
+
+![AMZN Cumulative Returns Plot](Images/1h/AMZN_cumulative_returns_plot_1h.png)
+
+![AMZN Cumulative Returns Plot LR1h](Images/1h/AMZN_cumulative_returns_plot__LR1h.png)
+
+![AMZN with SMAs EMA200](Images/1h/AMZN_with_SMAs_EMA200_1h.png)
+
+![GOOG Classification Report](Images/1h/GOOG_Classification%20Report_1h.png)
+
+![GOOG Cumulative Returns Plot](Images/1h/GOOG_cumulative_returns_plot_1h.png)
+
+![GOOG Cumulative Returns Plot LR1h](Images/1h/GOOG_cumulative_returns_plot__LR1h.png)
+
+![GOOG with SMAs EMA200](Images/1h/GOOG_with_SMAs_EMA200_1h.png)
+
+![META Classification Report](Images/1h/META_Classification%20Report_1h.png)
+
+![META Cumulative Returns Plot](Images/1h/META_cumulative_returns_plot_1h.png)
+
+![META Cumulative Returns Plot LR1h](Images/1h/META_cumulative_returns_plot__LR1h.png)
+
+![META with SMAs EMA200](Images/1h/META_with_SMAs_EMA200_1h.png)
+
+![NFLX Classification Report](Images/1h/NFLX_Classification%20Report_1h.png)
+
+![NFLX Cumulative Returns Plot](Images/1h/NFLX_cumulative_returns_plot_1h.png)
+
+![NFLX Cumulative Returns Plot LR1h](Images/1h/NFLX_cumulative_returns_plot__LR1h.png)
+
+![NFLX with SMAs EMA200](Images/1h/NFLX_with_SMAs_EMA200_1h.png)
+
+### 5 Minutes
+![AAPL Classification Report](Images/5m/AAPL_Classification%20Report_5m.png)
+
+![AAPL Cumulative Returns Plot](Images/5m/AAPL_cumulative_returns_plot_5m.png)
+
+![AAPL Cumulative Returns Plot LR5m](Images/5m/AAPL_cumulative_returns_plot__LR5m.png)
+
+![AAPL with SMAs EMA200](Images/5m/AAPL_with_SMAs_EMA200_5m.png)
+
+![AMZN Classification Report](Images/5m/AMZN_Classification%20Report_5m.png)
+
+![AMZN Cumulative Returns Plot](Images/5m/AMZN_cumulative_returns_plot_5m.png)
+
+![AMZN Cumulative Returns Plot LR5m](Images/5m/AMZN_cumulative_returns_plot__LR5m.png)
+
+![AMZN with SMAs EMA200](Images/5m/AMZN_with_SMAs_EMA200_5m.png)
+
+![GOOG Classification Report](Images/5m/GOOG_Classification%20Report_5m.png)
+
+![GOOG Cumulative Returns Plot](Images/5m/GOOG_cumulative_returns_plot_5m.png)
+
+![GOOG Cumulative Returns Plot LR5m](Images/5m/GOOG_cumulative_returns_plot__LR5m.png)
+
+![GOOG with SMAs EMA200](Images/5m/GOOG_with_SMAs_EMA200_5m.png)
+
+![META Classification Report](Images/5m/META_Classification%20Report_5m.png)
+
+![META Cumulative Returns Plot](Images/5m/META_cumulative_returns_plot_5m.png)
+
+![META Cumulative Returns Plot LR5m](Images/5m/META_cumulative_returns_plot__LR5m.png)
+
+![META with SMAs EMA200](Images/5m/META_with_SMAs_EMA200_5m.png)
+
+![NFLX Classification Report](Images/5m/NFLX_Classification%20Report_5m.png)
+
+![NFLX Cumulative Returns Plot](Images/5m/NFLX_cumulative_returns_plot_5m.png)
+
+![NFLX Cumulative Returns Plot LR5m](Images/5m/NFLX_cumulative_returns_plot__LR5m.png)
+
+![NFLX with SMAs EMA200](Images/5m/NFLX_with_SMAs_EMA200_5m.png)
 
 
 ## Discussion/ Conclusion
